@@ -64,7 +64,6 @@ double Fib_eq2(double Fp, int p, int n){
     x = pow(x,n-p);
 
     return x * Fp;
-    
 }
 
 double Fib_eq3(size_t n){
@@ -164,7 +163,7 @@ int main(){
     cout << "\n Equation1: " << Fib_eq1(p) << "\n Equation 2: " << Fib_eq2(Fib_eq1(p),p,n) << endl; 
     cout <<" Equation 3: " << Fib_eq3(n) << endl << endl;
 
-    cout << " n = 30, "<< Fib_eq3(30) << ", n = 31" << Fib_eq3(31) << endl;
+    cout << " n = 30, "<< Fib_eq3(30) << ", n = 31, " << Fib_eq3(31) << endl;
 
     cout << "Mathematical estimate of the 31st and 32nd terms using equation 3 ";
     cout << Fib_eq3(31) << " " << Fib_eq3(32) << endl << endl;
@@ -173,6 +172,7 @@ int main(){
     vector<int> V = {-3, -5, 5, -1, -3, 1, 5, -6}; 
 
     vector<int> vect = Largest_Sum(V);
+    cout << "The largest sub array for {-3, -5, 5, -1, -3, 1, 5, -6} is: " << endl;
 
     cout << "[";
 
@@ -190,6 +190,7 @@ int main(){
     V = {10, 2, -5, 1, 9, 0, -4, 2, -2}; 
 
     vect = Largest_Sum(V);
+    cout << "The largest sub array for {10, 2, -5, 1, 9, 0, -4, 2, -2} is: " << endl;
     cout << "[";
 
     for (size_t i = vect[0]; i <= vect[1]; i++)
@@ -205,6 +206,7 @@ int main(){
     V = {-7, 1, 8, 2, -3, 1}; 
 
     vect = Largest_Sum(V);
+    cout << "The largest sub array for {-7, 1, 8, 2, -3, 1} is: " << endl;
     cout << "[";
 
     for (size_t i = vect[0]; i <= vect[1]; i++)
@@ -221,6 +223,7 @@ int main(){
     V = {9, 7, 2, 16, -22, 11}; 
 
     vect = Largest_Sum(V);
+    cout << "The largest sub array for {9, 7, 2, 16, -22, 11} is: " << endl;
     cout << "[";
 
     for (size_t i = vect[0]; i <= vect[1]; i++)
@@ -234,9 +237,10 @@ int main(){
     }
 
     cout << endl;
-    V = {6,1, 9, -33, 7, 2, 9, 1, -3, 8, -2, 9, 12, -4}; 
+    V = {6, 1, 9, -33, 7, 2, 9, 1, -3, 8, -2, 9, 12, -4}; 
 
     vect = Largest_Sum(V);
+    cout << "The largest sub array for {6, 1, 9, -33, 7, 2, 9, 1, -3, 8, -2, 9, 12, -4} is: " << endl;
     cout << "[";
 
     for (size_t i = vect[0]; i <= vect[1]; i++)
